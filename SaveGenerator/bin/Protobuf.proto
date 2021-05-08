@@ -1,0 +1,25 @@
+syntax = "proto3";
+package protobuf;
+
+message Goods{
+repeated Weapon weapons=1;
+}
+
+
+message Weapon{
+string ID=1;
+string Type=2;
+string Part=3;
+int32 RareLevel=4;
+int64 StoreNum=5;
+int32 StackDrop=6;
+int32 LootScore=7;
+string NameIDS=8;
+string DescriptionIDS=9;
+string Icon=10;
+string Instance=11;
+uint32 FormulaID=12;
+string DropKingdom=13;
+string DeopPage=14;
+int32 CorpLevelLimit=15;
+}

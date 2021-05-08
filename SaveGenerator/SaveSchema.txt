@@ -1,0 +1,30 @@
+namespace Vest;
+
+
+table Goods{
+weapons:[Weapon];
+}
+
+
+table Weapon{
+  
+ID:string;
+  
+Type:string;
+
+Part:string;
+RareLevel:short;
+StoreNum:int=1;
+StackDrop:short=0;
+LootScore:short;
+NameIDS:string;
+DescriptionIDS:string;
+Icon:string;
+Instance:string;
+FormulaID:ushort;
+DropKingdom:string;
+DropPage:string;
+CorpLevelLimit:short=1;
+}
+
+root_type Goods;
